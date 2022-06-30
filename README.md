@@ -1,4 +1,4 @@
-# Hostel-Management-System
-A system built for hostel room allocation for our College(NIT Calicut) as a part of DBMS Course.
+# Hostel-Complaint-Management-System
+A system built for Alva's hostel 
 
-### For more details regarding the system please refer to SDD, SRS, UserManual of the system in Documentation folder.
+
