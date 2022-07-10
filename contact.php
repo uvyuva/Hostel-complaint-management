@@ -98,7 +98,7 @@
 
 <!-- contact -->
 <section class="contact py-5">
-	<div class="container">
+	<div class="container" >
 		<h2 class="heading text-capitalize mb-sm-5 mb-4"> Register Your Complaint </h2>
 			<div class="mail_grid_w3l">
 				<form action="contact.php" method="post">
@@ -114,33 +114,6 @@
 								<input type="text" name="rol_no" placeholder="USN" value="<?php echo $_SESSION['roll']; ?>" required="">
 							</div>
 							<div class="contact-fields-w3ls">
-								<!-- <input type="text" name="subject" placeholder="Field" required=""> -->
-								<!-- <div class="dropdown">
- 								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   								 Field
-  								</button>
-  								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    								<a class="dropdown-item" href="#">Water</a>
-    								<a class="dropdown-item" href="#">Electrical</a>
-    								<a class="dropdown-item" href="#">Wifi</a>
-									<a class="dropdown-item" href="#">Carpenter</a>
-									<a class="dropdown-item" href="#">Food</a>
-									<a class="dropdown-item"></a>
- 								</div>
-								</div> -->
-
-								<!-- <div class="dropdown">
-									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-									  Field of Complaint
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									  <li><a class="dropdown-item" value="Water" >Water</a></li>
-									  <li><a class="dropdown-item" value="Electrical" >Electrical</a></li>
-									  <li><a class="dropdown-item" value="Wifi">Wifi</a></li>
-									  <li><a class="dropdown-item" value="Carpenter">Carpenter</a></li>
-									  <li><a class="dropdown-item" value="Food">Food</a></li>
-									</ul>
-								  </div> -->
 								  <div class="contact-fields-w3ls">
 								  <select class="form-select" style="width: 100%;
 								  height: 54px;
@@ -177,7 +150,7 @@
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitc.ac.in/" target="_blank">AIET <span class="display"> MIJAR</span></a>
+			<a class="navbar-brand" href="https://www.aiet.org.in/" target="_blank">AIET <span class="display"></span></a>
 		</div>
 		<div class="footer-grid">
 			

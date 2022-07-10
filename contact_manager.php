@@ -166,7 +166,7 @@ $query6 = "SELECT * FROM Hostel WHERE Hostel_id = '$hostel_id'";
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitc.ac.in/" target="_blank">AIET<span class="display">MIJAR</span></a>
+			<a class="navbar-brand" href="https://www.aiet.org.in/" target="_blank">AIET<span class="display"></span></a>
 		</div>
 		<div class="footer-grid">
 			
