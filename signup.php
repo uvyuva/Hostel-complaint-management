@@ -93,7 +93,7 @@
                             <option value="3rd Year">3rd Year</option>
                             <option value="2nd year">2nd year</option>
                             <option value="1st year">1st year</option>
-                            <option value="MBA">MBA</option>
+                            
                         </select>
                     </div>
                 </div>
@@ -145,7 +145,8 @@
         let m_val = false;
         let u_val = false;
         let p_val = false;
-        let name_val = false;
+        let lname_val = false;
+        let fname_val = false;
 
         function fname_validation() {
 
@@ -158,14 +159,14 @@
                 console.log("f name error");
                 
                
-                name_val = true;
+                fname_val = true;
                 fname.classList.add("error");
                 validation();
             }
             else
             {
                
-                name_val = false;
+                fname_val = false;
                 fname.classList.remove("error");
                 validation();
             }
@@ -180,13 +181,13 @@
             let lname_label = document.getElementById("lname_label");
             if (val_str.test(lname.value)) {
                 console.log("l name error");
-                name_val = true;
+                lname_val = true;
                 lname.classList.add("error");
                 validation();
             }
             else
             {
-                name_val = false;
+                lname_val = false;
                 lname.classList.remove("error");
                 validation();
             }
@@ -235,18 +236,26 @@
                 validation();
             }
             else {
-
+               
                 password.classList.add("error");
+                p_val = false;
+                validation();
             }
         }
 
         function validation() {
             console.log("@val");
             let sub_button = document.getElementById("sign_up");
-            if (!u_val && !m_val && !p_val && !name_val) {
+            console.log("u_val",u_val);
+            console.log("m_val",m_val);
+            console.log("p_val",p_val);
+            console.log("lname_val",lname_val);
+            console.log("fname_val",fname_val);
+            if (!u_val && !m_val && !p_val && !lname_val && !fname_val) {
                 sub_button.setAttribute("hidden", "");
 
             }
+           
             else {
                 sub_button.removeAttribute("hidden");
             }
