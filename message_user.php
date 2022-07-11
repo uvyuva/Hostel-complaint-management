@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="web_home/css_home/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
 	<!-- //css files -->
 	
+	
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 	<!-- //web-fonts -->
@@ -41,10 +42,12 @@
 	}
 	.card-body{
 		padding: 15px;
+		font-weight: 1000;
 	}
 	.card-footer{
 		text-align: left;
 		padding: 15px;
+		font-weight: 800;
 	}
 </style>
 

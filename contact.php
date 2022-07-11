@@ -34,7 +34,13 @@
 	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="web_home/css_home/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="web_home/css_home/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
-	
+	<style>
+		input
+		{
+			font-size:17px !important;
+			font-weight: 1000 !important;
+		}
+	</style>
 	<!-- //css files -->
 	
 	<!-- web-fonts -->
@@ -117,8 +123,8 @@
 								  <div class="contact-fields-w3ls">
 								  <select class="form-select" style="width: 100%;
 								  height: 54px;
-								  font-size: 1.2rem;
-								  font-weight: 400;
+								  font-size: 17px;
+								  font-weight: 600;
 								  font-family: 'Poiret One', cursive"name="subject" aria-label="Default select example" >
 									<option >Field Of Complaint</option>
 									<option value="Water">Water</option>

@@ -40,18 +40,18 @@
                 </div>
             </div>
             <div class=" w3l-form-group">
-                <label>First Name</label>
+                <label id="fname_label">First Name</label>
                 <div class="group">
                     <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" name="student_fname" placeholder="First Name"
+                    <input type="text" id="fname" onchange="fname_validation()" class="form-control" name="student_fname" placeholder="First Name"
                         required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">
-                <label>Last Name</label>
+                <label id="lname_label">Last Name</label>
                 <div class="group">
                     <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" name="student_lname" placeholder="Last Name"
+                    <input type="text" id="lname" onchange="lname_validation()" class="form-control" name="student_lname" placeholder="Last Name"
                         required="required" />
                 </div>
             </div>
@@ -145,6 +145,54 @@
         let m_val = false;
         let u_val = false;
         let p_val = false;
+        let name_val = false;
+
+        function fname_validation() {
+
+            let val_str = /[0-9]+/i;
+
+            let fname = document.getElementById("fname");
+            let fname_label = document.getElementById("fname_label");
+
+            if (val_str.test(fname.value)) {
+                console.log("f name error");
+                
+               
+                name_val = true;
+                fname.classList.add("error");
+                validation();
+            }
+            else
+            {
+               
+                name_val = false;
+                fname.classList.remove("error");
+                validation();
+            }
+        }
+        function lname_validation() {
+            
+
+            let val_str = /[0-9]+/i;
+
+
+            let lname = document.getElementById("lname");
+            let lname_label = document.getElementById("lname_label");
+            if (val_str.test(lname.value)) {
+                console.log("l name error");
+                name_val = true;
+                lname.classList.add("error");
+                validation();
+            }
+            else
+            {
+                name_val = false;
+                lname.classList.remove("error");
+                validation();
+            }
+            
+        }
+
         function u_validation() {
             // let u_val=false;
             let usn = document.getElementById("usn");
@@ -195,7 +243,7 @@
         function validation() {
             console.log("@val");
             let sub_button = document.getElementById("sign_up");
-            if (!u_val && !m_val && !p_val) {
+            if (!u_val && !m_val && !p_val && !name_val) {
                 sub_button.setAttribute("hidden", "");
 
             }

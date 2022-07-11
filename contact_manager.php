@@ -36,6 +36,16 @@
 	<link rel="stylesheet" href="web_home/css_home/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="web_home/css_home/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
 	<!-- //css files -->
+	<style>
+		input
+		{
+			font-size:17px !important;
+			font-weight: 1000 !important;
+		}
+	</style>
+
+
+
 	<link rel="stylesheet" href="web_home/css_home/flexslider.css" type="text/css" media="screen" property="" />
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
@@ -135,7 +145,7 @@ $query6 = "SELECT * FROM Hostel WHERE Hostel_id = '$hostel_id'";
 							<select class="form-select" name="subject" style="width: 100%;
 								  height: 54px;
 								  font-size: 1.2rem;
-								  font-weight: 400;
+								  font-weight: bold;
 								  font-family: 'Poiret One', cursive" aria-label="Default select example">
 									<option >Field Of Complaint</option>
 									<option value="Water">Water</option>
