@@ -1,4 +1,4 @@
 # Hostel-Complaint-Management-System
-A system built for Alva's hostel 
+A system built for Alva's hostels management purpose.
 
 
